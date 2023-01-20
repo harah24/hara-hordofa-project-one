@@ -1,0 +1,42 @@
+@use "variables" as *;
+
+body{
+    font-family: $main-font;
+    font-size: 1.25rem;
+    color: $secondary;
+    background-color: $primary;
+    line-height: 30px; 
+    letter-spacing:1.9px;
+}
+
+h1{
+    font-size: 5rem;
+    letter-spacing: 2.4px;
+}
+
+h2{
+    font-size: 2rem;
+    letter-spacing: 2.6px;
+}
+
+h3,
+h4 {
+    font-size: 2rem;
+    letter-spacing: 2.2px;
+}
+
+button{
+    font-size: 1.25rem;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color:$secondary;
+    background-color: $tertiary;
+    border: none;
+}
+
+nav{
+    font-size: 2.3rem;
+    line-height: 29px;
+    letter-spacing: 1.9px;
+}
+

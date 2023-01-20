@@ -1,0 +1,20 @@
+@use "variables" as *;
+
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 30px 0 0;
+}
+
+nav a {
+    margin: 0 30px 0 0;
+    text-decoration: none;
+    color: $secondary;
+}
+
+a:hover,
+a:focus{
+    text-decoration: underline 3px $quinary;
+    color: $quinary;
+}
