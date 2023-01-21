@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap" rel="stylesheet"> 
@@ -13,18 +13,24 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Bar-One</a> 
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <div class="blog-title wrapper">
-        <h1>get in touch</h1>
-        </div>
+        <div class="contact-header">
+            <nav>
+                <ul class="main-menu">
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <ul>
+                        <li class="bar-one">Bar-One</li>
+                    </ul>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </ul>
+            </nav>
+            <div class="contact-title wrapper">
+            <h1>Get in Touch</h1>
+            </div>
+        </div><!-- contact-header end -->
     </header>
-    <section>
+    <section class="bottom-section">
         <div class="connect">
             <div class="socials">
                 <ul>
@@ -51,14 +57,12 @@
                 <input type="text" id="email" name="email" class="email-address" placeholder="Email address">
             </div><!-- end of form-container -->
             <div class="message">
-                <textarea name="message" id="message" placeholder="Message" cols="80" rows="10"></textarea>
+                <textarea name="message" id="message" placeholder="Message" cols="50" rows="10"></textarea>
                 <button class="contact-btn">Submit</button>
             </div><!-- end of message -->
         </form>
     </div><!-- end of form-box -->
     </section>
-    <footer>
-        <p>Copyright © 2019 HackerYou</p>
-    </footer>
+
 </body>
 </html>

@@ -1,0 +1,54 @@
+@use "variables" as *; 
+
+.contact-header {
+        background-image: url(../../../assets/contact-header-1.jpg) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+        max-width: 100%;
+}
+
+.contact-title {
+    position: absolute;
+    transform: translateY(50px);
+    h1{
+        font-size: 3rem;
+    }
+}
+
+.bottom-section{
+    display: flex;
+    // height: 50vh;
+    margin-left: 100px;
+}
+
+// connect 
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.socials li{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li{
+    margin: 0 10px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info h4 {
+    display: flex;
+    margin-left: 45px;
+}
+
+.contact-btn{
+    display: flex;
+}

@@ -3,10 +3,11 @@
 .form-box{
     display: flex;
     margin-left: 50px;
-    background-color: $primary;
+    background-color: $tertiary;
     height: fit-content;
     width: fit-content;
-    transform: translateY(-300px);
+    transform: translateY(-150px);
+    
 }
 
 form {
@@ -14,7 +15,7 @@ form {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    box-shadow: -31px 34px 5px 5px $quinary;
+    // box-shadow: 0px 34px 5px 5px $quinary;
 }
 
 .form-container {
@@ -30,7 +31,7 @@ form {
 .email-address {
     border: none;
     border-bottom: 2px solid $secondary;
-    background-color: $primary;
+    background-color: $tertiary;
     color: $secondary;
     padding-left: 10px;
 }
@@ -40,7 +41,7 @@ textarea {
     resize: none;
     margin-bottom: 50px;
     padding: 10px;
-    background-color: $primary;
+    background-color: $tertiary;
     color: $secondary;
 }
 

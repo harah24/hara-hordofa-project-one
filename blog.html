@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap" rel="stylesheet"> 
@@ -12,20 +12,24 @@
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <header>
+    <header class="blog-header">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Bar-One</a> 
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
+            <ul class="main-menu">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <ul>
+                    <li class="bar-one">Bar-One</li>
+                </ul>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </ul>
         </nav>
         <div class="blog-title wrapper">
             <h1>blog</h1>
         </div>
     </header>
     <main class="main-flex">
-        <aside class="posts">
+        <aside class="bar1-posts">
             <div class="side-img">
                 <img src="./assets/sidebar-image.jpg" alt="Bartender pouring beer in a glass from a beer tap.">
             </div><!-- end of side-img -->

@@ -9,26 +9,25 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="./fontawesome/css/all.css">
-	<link rel="stylesheet" href="./styles/styles.css">
-	
+	<link rel="stylesheet" href="./styles/styles.css">	
 </head>
 <body>
 	<header>
-		<div>
-			<nav>
-				<a href="index.html">Home</a>
-				<a href="#">About</a>
-				<a href="#">Bar-One</a> 
-				<a href="blog.html">Blog</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-			<div>
+		<div class="homepg-header">
+            <nav>
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <li class="bar-one">Bar-One</li>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+            </nav>
+			<div class="homepg-title">
 				<h1> Bar-One <span> Place to be</span></h1>
 			</div>
-		</div>
-		<div>
-			<img src="./assets/home-image-1.jpg" alt="Restaurant bar with drink menu backdrop, hanging glasses and bottles.">
-		</div>
+		</div> <!-- end homepg-header -->
+		<div class="headerbox-img">
+			<img src="./assets/header-box.jpg" alt="Hanging wine glasses.">
+		</div><!-- end of headerbox-img -->
 	</header>
 	<main>
 		<section class="wrapper">
@@ -46,8 +45,8 @@
 						<h4>community</h4>
 					</div><!-- end of solid-users -->
 					<p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, 							sit amet imperdiet dolor placerat.</p>
-				</div>
-			</div>
+				</div> <!-- end of community -->
+			</div><!-- end of container1 -->
 			<div class="container2">
 				<div class="blog">
 					<div class="solid-file">
@@ -69,12 +68,12 @@
 			<div class="box-1">
 				<img src="./assets/left-image.jpg" alt="Restaurant bar counter with hanging lights,exposed shelves of alcohol, glasses and flowers 							on the counter. ">
 			</div> <!-- end of box-1 -->
-			<div class="box-2">
+			<div class="box-2 wrapper">
 				<h4>Plan ahead</h4>
 				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id 						vestibulum lacus tristique eu. Sed urno ex, porttitor nec iaculis at.</p>
 				<button>read more</button>
 			</div><!-- end of box-2 -->
-			<div class="box-3">
+			<div class="box-3 wrapper">
 				<h4>new locations</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id 						vestibulum lacus tristique eu. Sed urno ex, porttitor nec iaculis at.</p>
 				<button>read more</button>
@@ -82,9 +81,9 @@
 			<div class="box-4">
 				<img src="./assets/right-image.jpg" alt="Restaurant bar counter with colourful bar stools & people sitting at the bar counter talking">
 			</div><!-- end of box-4 -->
-		</section>
-		<div class="party-info"> 
-			<h2>want to host a party?</h2>
+		</section><!-- end of plan-locations -->
+		<div class="wrapper party-info"> 
+			<h2>Want to host a party?</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id 	
 			   vestibulum lacus tristique eu. Sed urno ex, porttitor nec iaculis at, consectetur vel turpis. Vestibulum ultricies, felis in lacinia 			 porttitor, tortor metus convallis augue, at fermentum.</p>
 			<button>find out more</button>
@@ -99,14 +98,15 @@
 			</div><!-- end of small-img -->
 			<div class="event-text">
 				<h3>Events</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat 						vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit 						amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis 							pharetra luctus. Quisque interdum orci quis convallis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat 											vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur 		
+					adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis 					 convallis.</p>
 				<button>find out more</button>
 			</div><!-- end of event-text -->
 		</section><!-- end of events -->
 		<section class="gallery-imgs">
 			<ul class="home-gallery">
 				<li>
-					<img src="./assets/gallery-image-1.jpg" alt="Bar counter with cocktail making tools, drink mat, and alcohol and glasses in the 						background.">
+					<img src="./assets/gallery-image-1.jpg" alt="Bar counter with cocktail making tools, drink mat, alcohol and glasses in the background.">
 				</li>
 				<li>
 					<img src="./assets/gallery-image-2.jpg" alt="Cheese burger with bacon, fries and dipping sauce on a white plate">
