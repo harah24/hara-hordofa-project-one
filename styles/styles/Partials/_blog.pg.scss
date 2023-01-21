@@ -1,2 +1,138 @@
 @use "variables" as *;
 
+.blog-header{
+    background-image: url(../../../assets/blog-header-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.blog-title{
+    display: flex;
+    justify-content:center;
+    flex-basis: 50%;
+    margin-top: 100px;
+}
+
+.main-flex{
+    display: flex;
+}
+
+.bar1-posts{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.side-img{
+    max-width: 60%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    box-shadow: 43px 30px 0px -7px $tertiary;
+}
+
+.side-blog{
+    background-color:$tertiary;
+    max-width: 58%;
+    margin-left: 50px;
+    margin-top: -5px;
+}
+
+.our-mission{
+    padding-left: 20px;
+    margin-bottom: 50px;
+    max-width: 90%;
+    span{
+        font-weight: bolder;
+    }
+}
+
+.posts{
+    max-width: 90%;
+    h4{
+        margin-left: 20px;
+    }
+    li{
+        margin-left: -18px;
+    }
+}
+
+.recent-posts li::before{
+    content: "•";
+    color: $quaternary;
+}
+
+.main-blog{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 200px;
+}
+
+.blog-post-img{
+    box-shadow: -30px 40px 0px 4px $quinary;
+}
+
+.new-menu{
+    margin: 28px 0 50px -22px;
+    padding-top: 20px;
+    box-shadow: -13px 14px 0px -1px $quinary;
+    padding-left: 50px;
+}
+
+.blog-date{
+    margin-top: -15px;
+}
+
+.comments{
+    margin-bottom: 50px;
+}
+
+.comment-1{
+    display: flex;
+    .sulaire{
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .sulaires-comment{
+        max-width: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+    .comment-date{
+        margin-bottom: -10px;
+    }
+}
+
+.comment-2{
+    display: flex;
+    margin-top: 20px;
+    .renzo{
+        margin-top: 5px;
+        margin-right: 20px;
+    }
+    .renzos-comment{
+        max-width: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+    .comment-date{
+        margin-bottom: -10px;
+    }
+}
+
+.blog-form {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    .name,
+    .email-address{
+        padding-right: 100px;
+        background-color: $secondary;
+    }
+    textarea{
+        background-color: $secondary;
+        }
+}
