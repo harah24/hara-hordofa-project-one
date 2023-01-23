@@ -1,4 +1,4 @@
-@use "variables" as *; 
+@use "variables" as *;
 
 .contact-header {
         background-image: url(../../../assets/contact-header-1.jpg) ;
@@ -10,7 +10,8 @@
 
 .contact-title {
     position: absolute;
-    transform: translateY(50px);
+    transform: translateX(250px);
+    transform: translateY(150px);
     h1{
         font-size: 3rem;
     }

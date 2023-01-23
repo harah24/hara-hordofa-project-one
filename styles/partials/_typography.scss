@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 body{
-    font-family: $main-font;
+    // font-family:;
     font-size: 1.25rem;
     color: $secondary;
     background-color: $primary;
@@ -34,9 +34,4 @@ button{
     border: none;
 }
 
-nav{
-    font-size: 1.75rem;
-    line-height: 29px;
-    letter-spacing: 1.9px;
-}
 
