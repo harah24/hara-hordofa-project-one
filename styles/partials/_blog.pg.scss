@@ -60,6 +60,7 @@
 .recent-posts li{
     list-style: none;
 }
+
 .recent-posts li::before{
     content: "•";
     color: $quaternary;

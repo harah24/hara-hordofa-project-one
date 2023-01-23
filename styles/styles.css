@@ -249,6 +249,7 @@ img {
 }
 
 body {
+  font-family: "Chathura", sans-serif;
   font-size: 1.25rem;
   color: #FFFFFF;
   background-color: #111010;
@@ -285,11 +286,11 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 30px;
-  font-size: 1.75rem;
+  font-size: 2.3rem;
   line-height: 29px;
   letter-spacing: 1.9px;
 }
@@ -306,6 +307,7 @@ a:focus {
 }
 
 nav .bar-one {
+  font-family: "Tulpen One", cursive;
   pointer-events: none;
 }
 
@@ -324,7 +326,7 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 50px;
+  margin-left: 150px;
   background-color: #220303;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -332,8 +334,8 @@ footer p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
 }
 
 form {
@@ -346,6 +348,8 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 30px;
+  -webkit-box-shadow: 33px 37px 0px -10px #FF8327;
+          box-shadow: 33px 37px 0px -10px #FF8327;
 }
 
 .form-container {
@@ -356,7 +360,7 @@ form {
 }
 
 .name {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .name,
@@ -366,6 +370,8 @@ form {
   background-color: #220303;
   color: #FFFFFF;
   padding-left: 10px;
+  font-family: "Chathura", sans-serif;
+  font-size: 1.75rem;
 }
 
 textarea {
@@ -375,10 +381,14 @@ textarea {
   padding: 10px;
   background-color: #220303;
   color: #FFFFFF;
+  font-family: "Chathura", sans-serif;
+  font-size: 1.75rem;
 }
 
 .message button {
   padding: 5px 350px;
+  font-family: "Chathura", sans-serif;
+  font-size: 1.75rem;
 }
 
 .contact-header {
@@ -390,14 +400,12 @@ textarea {
 }
 
 .contact-title {
-  position: absolute;
-  -webkit-transform: translateX(250px);
-          transform: translateX(250px);
-  -webkit-transform: translateY(150px);
-          transform: translateY(150px);
+  -webkit-transform: translateY(180px);
+          transform: translateY(180px);
+  margin-left: 160px;
 }
 .contact-title h1 {
-  font-size: 3rem;
+  font-size: 5.2rem;
 }
 
 .bottom-section {
@@ -422,13 +430,11 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 ul li {
   margin: 0 10px;
+  list-style: none;
 }
 
 .contact-info {
@@ -446,6 +452,7 @@ ul li {
   display: -ms-flexbox;
   display: flex;
   margin-left: 45px;
+  margin-bottom: 0;
 }
 
 .contact-btn {
@@ -648,6 +655,10 @@ ul li {
   -webkit-transform: translateX(400px);
           transform: translateX(400px);
   z-index: 1;
+  font-family: "Tulpen One", cursive;
+}
+.homepg-title span {
+  font-family: "Chathura", sans-serif;
 }
 
 .headerbox-img {
