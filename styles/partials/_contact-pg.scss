@@ -10,7 +10,7 @@
 
 .contact-title {
     transform: translateY(180px);
-    margin-left: 160px;
+    margin-left: 150px;
     h1{
         font-size: 5.2rem;
     }
@@ -18,7 +18,7 @@
 
 .bottom-section{
     display: flex;
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 // connect 
@@ -31,22 +31,30 @@
 
 .socials li{
     display: flex;
+    justify-content: space-between;
 }
 
-ul li{
+ul i{
     margin: 0 10px;
-    list-style: none;
+}
+
+.contact-info ul{
+    margin-top: 0;
 }
 
 .contact-info{
     display: flex;
     flex-direction: column;
+   
+    li{
+        list-style: none;
+    }
 }
 
 .contact-info h4 {
     display: flex;
     margin-left: 45px;
-    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .contact-btn{

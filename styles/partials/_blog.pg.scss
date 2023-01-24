@@ -8,10 +8,7 @@
 }
 
 .blog-title{
-    display: flex;
-    justify-content:center;
-    flex-basis: 50%;
-    margin-top: 100px;
+    transform: translateY(160px);
 }
 
 .main-flex{
@@ -39,31 +36,32 @@
 }
 
 .our-mission{
-    padding-left: 20px;
-    margin-bottom: 50px;
-    max-width: 90%;
+    padding-left: 30px;
+    max-width: 70%;
+    h4 {
+        margin: 0;
+    }
     span{
         font-weight: bolder;
+        color: $quinary;
     }
 }
 
 .posts{
-    max-width: 90%;
+    max-width: 70%;
     h4{
-        margin-left: 20px;
+        padding-left: 30px;
+        margin: 0;
     }
     li{
         margin-left: -18px;
     }
 }
 
-.recent-posts li{
-    list-style: none;
-}
-
 .recent-posts li::before{
-    content: "•";
+    content: "•"; 
     color: $quaternary;
+    padding-right: 10px;
 }
 
 .main-blog{
@@ -79,7 +77,7 @@
 }
 
 .new-menu{
-    margin: 28px 0 50px -22px;
+    margin: 28px 0 10px -22px;
     padding-top: 20px;
     box-shadow: -13px 14px 0px -1px $quinary;
     padding-left: 50px;
@@ -87,16 +85,17 @@
 
 .blog-date{
     margin-top: -15px;
+    color: $quinary;
 }
 
 .comments{
-    margin-bottom: 50px;
-}
+    margin-bottom: 0px;
+} 
 
 .comment-1{
     display: flex;
     .sulaire{
-        margin-top: 30px;
+        margin-top: 40px;
         margin-right: 20px;
     }
     .sulaires-comment{
@@ -105,7 +104,9 @@
         flex-direction: column;
     }
     .comment-date{
+        font-size: 1.75rem;
         margin-bottom: -10px;
+        color: $quinary;
     }
 }
 
@@ -113,7 +114,7 @@
     display: flex;
     margin-top: 20px;
     .renzo{
-        margin-top: 5px;
+        margin-top: 40px;
         margin-right: 20px;
     }
     .renzos-comment{
@@ -122,21 +123,9 @@
         flex-direction: column;
     }
     .comment-date{
+        font-size: 1.75rem;
         margin-bottom: -10px;
+        color: $quinary;
     }
 }
 
-.blog-form {
-    all: unset;
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    .name,
-    .email-address{
-        padding-right: 100px;
-        background-color: $secondary;
-    }
-    textarea{
-        background-color: $secondary;
-        }
-}

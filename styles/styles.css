@@ -250,7 +250,7 @@ img {
 
 body {
   font-family: "Chathura", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: #FFFFFF;
   background-color: #111010;
   line-height: 30px;
@@ -263,23 +263,28 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 4rem;
   letter-spacing: 2.6px;
 }
 
 h3,
 h4 {
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 2.2px;
 }
 
 button {
-  font-size: 1.25rem;
+  font-family: "Tulpen One", cursive;
+  font-size: 1.5rem;
   line-height: 32px;
   letter-spacing: 1px;
   color: #FFFFFF;
   background-color: #BF2603;
   border: none;
+}
+
+li {
+  list-style: none;
 }
 
 nav {
@@ -314,6 +319,7 @@ nav .bar-one {
 footer {
   background-color: #111010;
   color: #FFFFFF;
+  font-size: 1.95rem;
 }
 
 footer p {
@@ -322,11 +328,41 @@ footer p {
   text-align: center;
 }
 
+/* blog page form */
+.blog-form {
+  all: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+.blog-form .name,
+.blog-form .email-address {
+  padding-right: 100px;
+  background-color: #111010;
+  border-color: #FF8327;
+  width: 27%;
+}
+.blog-form textarea {
+  background-color: #111010;
+  border-color: #FF8327;
+}
+
+.message .blog-btn {
+  padding: 5px 235px;
+  font-family: "Tulpen One", cursive;
+}
+
+/* contact page form */
 .form-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 150px;
+  margin-left: 50px;
   background-color: #220303;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -347,7 +383,7 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px;
+  padding: 50px;
   -webkit-box-shadow: 33px 37px 0px -10px #FF8327;
           box-shadow: 33px 37px 0px -10px #FF8327;
 }
@@ -360,16 +396,16 @@ form {
 }
 
 .name {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .name,
 .email-address {
   border: none;
   border-bottom: 2px solid #FFFFFF;
+  width: 50%;
   background-color: #220303;
   color: #FFFFFF;
-  padding-left: 10px;
   font-family: "Chathura", sans-serif;
   font-size: 1.75rem;
 }
@@ -386,9 +422,8 @@ textarea {
 }
 
 .message button {
-  padding: 5px 350px;
-  font-family: "Chathura", sans-serif;
-  font-size: 1.75rem;
+  padding: 5px 335px;
+  font-family: "Tulpen One", cursive;
 }
 
 .contact-header {
@@ -402,7 +437,7 @@ textarea {
 .contact-title {
   -webkit-transform: translateY(180px);
           transform: translateY(180px);
-  margin-left: 160px;
+  margin-left: 150px;
 }
 .contact-title h1 {
   font-size: 5.2rem;
@@ -412,7 +447,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 100px;
+  margin-left: 90px;
 }
 
 .connect {
@@ -430,11 +465,17 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-ul li {
+ul i {
   margin: 0 10px;
-  list-style: none;
+}
+
+.contact-info ul {
+  margin-top: 0;
 }
 
 .contact-info {
@@ -446,13 +487,16 @@ ul li {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.contact-info li {
+  list-style: none;
+}
 
 .contact-info h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 45px;
-  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .contact-btn {
@@ -469,15 +513,8 @@ ul li {
 }
 
 .blog-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  margin-top: 100px;
+  -webkit-transform: translateY(160px);
+          transform: translateY(160px);
 }
 
 .main-flex {
@@ -513,31 +550,32 @@ ul li {
 }
 
 .our-mission {
-  padding-left: 20px;
-  margin-bottom: 50px;
-  max-width: 90%;
+  padding-left: 30px;
+  max-width: 70%;
+}
+.our-mission h4 {
+  margin: 0;
 }
 .our-mission span {
   font-weight: bolder;
+  color: #FF8327;
 }
 
 .posts {
-  max-width: 90%;
+  max-width: 70%;
 }
 .posts h4 {
-  margin-left: 20px;
+  padding-left: 30px;
+  margin: 0;
 }
 .posts li {
   margin-left: -18px;
 }
 
-.recent-posts li {
-  list-style: none;
-}
-
 .recent-posts li::before {
   content: "•";
   color: #BF2603;
+  padding-right: 10px;
 }
 
 .main-blog {
@@ -559,7 +597,7 @@ ul li {
 }
 
 .new-menu {
-  margin: 28px 0 50px -22px;
+  margin: 28px 0 10px -22px;
   padding-top: 20px;
   -webkit-box-shadow: -13px 14px 0px -1px #FF8327;
           box-shadow: -13px 14px 0px -1px #FF8327;
@@ -568,10 +606,11 @@ ul li {
 
 .blog-date {
   margin-top: -15px;
+  color: #FF8327;
 }
 
 .comments {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 .comment-1 {
@@ -580,7 +619,7 @@ ul li {
   display: flex;
 }
 .comment-1 .sulaire {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-right: 20px;
 }
 .comment-1 .sulaires-comment {
@@ -594,7 +633,9 @@ ul li {
           flex-direction: column;
 }
 .comment-1 .comment-date {
+  font-size: 1.75rem;
   margin-bottom: -10px;
+  color: #FF8327;
 }
 
 .comment-2 {
@@ -604,7 +645,7 @@ ul li {
   margin-top: 20px;
 }
 .comment-2 .renzo {
-  margin-top: 5px;
+  margin-top: 40px;
   margin-right: 20px;
 }
 .comment-2 .renzos-comment {
@@ -618,27 +659,9 @@ ul li {
           flex-direction: column;
 }
 .comment-2 .comment-date {
+  font-size: 1.75rem;
   margin-bottom: -10px;
-}
-
-.blog-form {
-  all: unset;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 30px;
-}
-.blog-form .name,
-.blog-form .email-address {
-  padding-right: 100px;
-  background-color: #FFFFFF;
-}
-.blog-form textarea {
-  background-color: #FFFFFF;
+  color: #FF8327;
 }
 
 .homepg-header {

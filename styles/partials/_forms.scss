@@ -1,8 +1,35 @@
 @use "variables" as *;
 
+
+/* blog page form */
+
+.blog-form {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    .name,
+    .email-address{
+        padding-right: 100px;
+        background-color: $primary;
+        border-color:$quinary ;
+        width: 27%;
+    }
+    textarea{
+        background-color: $primary;
+        border-color: $quinary;
+        }
+}
+ .message .blog-btn{
+    padding: 5px 235px;
+    font-family: $secondary-font;
+}
+
+/* contact page form */
+
 .form-box{
     display: flex;
-    margin-left: 150px;
+    margin-left: 50px;
     background-color: $tertiary;
     height: fit-content;
     width: fit-content;
@@ -13,7 +40,7 @@ form {
     all: unset;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 50px;
     box-shadow: 33px 37px 0px -10px $quinary;
 }
 
@@ -23,16 +50,16 @@ form {
 }
 
 .name{
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .name,
 .email-address {
     border: none;
     border-bottom: 2px solid $secondary;
+    width: 50%;
     background-color: $tertiary;
     color: $secondary;
-    padding-left: 10px;
     font-family: $primary-font;
     font-size: 1.75rem;
 }
@@ -50,9 +77,8 @@ textarea {
 
 .message{
     button{
-        padding: 5px 350px;
-        font-family: $primary-font;
-        font-size: 1.75rem;
+        padding: 5px 335px;
+        font-family: $secondary-font;
     }
 }
 
