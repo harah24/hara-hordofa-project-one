@@ -1195,6 +1195,37 @@ ul.sliding-menu a:focus {
   }
 }
 @media (max-width: 900px) {
+  html {
+    font-size: 1.25rem;
+  }
+  html h1 {
+    font-size: 4rem;
+  }
+  html h2 {
+    font-size: 3rem;
+  }
+  html h3, html h4 {
+    font-size: 2.5rem;
+  }
+  nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homepg-title {
+    top: 150px;
+  }
+  .homepg-title h1 {
+    font-size: 6rem;
+    -webkit-transform: translateX(-170px);
+            transform: translateX(-170px);
+  }
+  .homepg-title h2 {
+    font-size: 3rem;
+    -webkit-transform: translateX(-170px);
+            transform: translateX(-170px);
+    top: -40px;
+  }
   .headerbox-img {
     display: none;
   }
@@ -1219,14 +1250,5 @@ ul.sliding-menu a:focus {
   }
   .form-box {
     display: none;
-  }
-  .homepg-title h1 {
-    font-size: 3rem;
-  }
-  .contact-title h1 {
-    font-size: 3rem;
-  }
-  .blog-title h1 {
-    font-size: 3rem;
   }
 }
