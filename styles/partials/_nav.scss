@@ -1,6 +1,6 @@
 @use "variables" as *;
 
-nav{
+nav ul{
     display:flex;
     justify-content:center;
     padding-top: 30px;
@@ -10,7 +10,7 @@ nav{
     letter-spacing:1.9px;
 }
 
-nav a {
+nav li a{
     margin-right:40px;
     text-decoration: none;
     color: $secondary;
