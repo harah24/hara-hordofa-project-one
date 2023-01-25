@@ -1,196 +1,103 @@
 @use "variables" as *;
 
+/* to remove the hamburger menu from tablet and desktop views */
+@media (min-width:501px){
+    label[for="toggle"] {
+    display: none;
+    }
+    input[type="checkbox"]{
+    display: none;
+    }
+}
+
+/* mobile view */
+/* sliding menu reference from Intro to web dev course on advance selectors */
+
 @media (max-width:500px){
 
-    body{
-        font-size: clamp(0.9rem, 1.25vw, 1rem);
-        p{
-            width: max(200px,100%);
-        }
-        button{
-            font-size: clamp(0.9rem, 1vw, 1rem);
-        }
-        main{
-            width: max(320px,70%);
-        }
-    }    
-    .box-1,
-    .box-4,
-    .small-img,
-    .home-gallery{
-        display: none;
-        }
-    .homepg-header{
-        height:20vh;
-        h1{
-        font-size: 2rem;
-        transform: translateX(-350px);
-        margin-top: -50px;
-         }
-        .headerbox-img { display: none;}
-    }
-    nav{
+    nav ul{
         display: flex;
-        flex-wrap:wrap;
-        margin-left: 330px;
-        font-size: 1rem;
-        max-width:min-content;
+        flex-direction: column;
+        margin-right: 50px;
     }
-    .party-info{
-            transform: translateY(-60px);    
-        h2{
-           margin-left: -20px;
-           font-size: 1rem;
-        }
-        p{
-            margin-top: -10px;   
-        }
+
+    ul.sliding-menu{
+        background-color:$primary;
+        position: fixed;
+        z-index: 10;
+        width: 50%;
+        left: -50%;
+        top: 0;
+        height: 39%;
+        transition: all 0.5s;
+    }
+
+    ul.sliding-menu a{
+        border-bottom: 1px solid $secondary;
+        display: inline-block;
+        font-size:1.8rem;
+        width: 100%;
+        padding: 20px 0;
+        padding-left: 15px;
+        transition: all 0.3s;
+        margin: 0;
+    }
+
+    ul.sliding-menu a:hover,
+    ul.sliding-menu a:focus{
+        background:$tertiary;
+    }
+
+    input[type="checkbox"]:checked + ul.sliding-menu{
+        left: 0;
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+
+    label[for="toggle"]{
+        position: fixed;
+        top: 50px;
+        right: 20px;
+        color: $secondary;
+        z-index: 10;
+        font-size: 3.5rem;
+    }
+
+    html{
+        font-size: 1.25rem;
         button{
-            padding: 5px;
-            margin-right: 20px; 
-            margin-bottom: -200px;
-            font-size:80%;
+            font-size: 1.25;
+        }
+        h1{
+
         }
     }
-    .plan-locations{
-        button{
-            max-width: 90%;
-            padding: 0;
-            margin-left: 5px;
-            margin-bottom: 20px;
-        }
-        .box-2{
-        max-width:70%;
-        margin-top:30px;
-        }
-        .box-3{
-        max-width:70%;
-        margin-top:30px;
-        margin-left:auto;
-         }
-    }
+
     .solid-house i,
     .solid-users i,
     .solid-file i,
-    .solid-phone i {
-        background-color:transparent;
+    .solid-phone i{
+        padding: 8px;
+        font-size: 1rem;
     }
     
-    .container1, .container2{
+    .container1,
+    .container2{
         display: flex;
         flex-direction: column;
-        max-width: 50%;
-    }
-
-    .new-space{
-        transform:translateX(-100px);
-        margin-top: -100px;
-    }
-    .container1 .community{
-        margin-top: 20px;
-    
-    }
-    .container2 .blog{
-        margin-left: 0;
-        margin-top: -30px;
-        padding-bottom: 20px;
-    }
-    .banner{
-        width: 100vw;
-        margin-top: -70px;
-        margin-bottom:-50px;
-    }
-    .profile-text {
-        max-width: 50%;
-        transform: translateX(-50px);
-        button{
-            font-size: 80%;
+        max-width: 100%;
+        margin-top: 0;
+        .new-space,
+        .blog{
+            margin: 0;
         }
     }
 
-    .blog-header{
-        height:30vh;
-        h1{
-            font-size: 2rem;
-        }
-    }
-
-    .main-flex{
-        display: flex;
-        flex-direction: column;
-        margin-left: 50px;
-    }
-    .side-image{
-        margin-top:auto;
-        box-shadow: none;
-    }
-    .side-blog,
-    .our-mission,
-    .posts{
-       max-width: 100%;
-       margin-left: 0;
-       background-color:$secondary;
-    }
-    .our-mission{
-        max-width:max-content;
-    }
-    .posts{
-        margin-bottom: 150px;
-    }
-    .new-menu h2{
-        font-size: 1.25rem; 
-    }
-    .sulaire, 
-    .renzo{
-        display: none;
-    }
-    .contact-header{
-        height: 25vh;
-    }
-    .contact-title h1{
-        font-size: 2rem;
-        transform: translateX(80px);
-    }
-    .socials,
-    .contact-info{
-    transform: translateY(200px);
-    margin-left: -50px;
-    }
-    .form-box{
-        display: none;
-    }
 }
 
-@media (max-width:1000px){
-    .headerbox-img { display: none;}
-    .blog-post-img {display: none;}
-    .homepg-header{
-        height:40vh;
-    }
-    .homepg-header nav {
-        display: flex;
-        flex-wrap:wrap;
-    }
-    .blog-post-img,
-    .great-locations{
-        box-shadow:none;
-    }
-    .blog-form{
-        display: none;
-    }
 
-    .form-box{
-        display: none;
-    }
 
-   .homepg-title h1{
-        font-size: 3rem;
-    }
-    .contact-title h1{
-        font-size: 3rem;
-    }
-    .blog-title h1{
-        font-size: 3rem;
 
-    }
-}
+

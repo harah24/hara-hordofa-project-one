@@ -372,7 +372,7 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 100px;
+  margin-left: 50px;
   background-color: #220303;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -564,7 +564,7 @@ textarea {
 }
 
 .posts {
-  max-width: 70%;
+  max-width: 80%;
 }
 .posts h4 {
   padding-left: 50px;
@@ -888,88 +888,83 @@ textarea {
   list-style: none;
 }
 
+/* to remove the hamburger menu from tablet and desktop views */
+@media (min-width: 501px) {
+  label[for=toggle] {
+    display: none;
+  }
+  input[type=checkbox] {
+    display: none;
+  }
+}
+/* mobile view */
+/* sliding menu reference from Intro to web dev course on advance selectors */
 @media (max-width: 500px) {
-  body {
-    font-size: clamp(0.9rem, 1.25vw, 1rem);
-  }
-  body p {
-    width: max(200px, 100%);
-  }
-  body button {
-    font-size: clamp(0.9rem, 1vw, 1rem);
-  }
-  body main {
-    width: max(320px, 70%);
-  }
-  .box-1,
-.box-4,
-.small-img,
-.home-gallery {
-    display: none;
-  }
-  .homepg-header {
-    height: 20vh;
-  }
-  .homepg-header h1 {
-    font-size: 2rem;
-    -webkit-transform: translateX(-350px);
-            transform: translateX(-350px);
-    margin-top: -50px;
-  }
-  .homepg-header .headerbox-img {
-    display: none;
-  }
-  nav {
+  nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-left: 330px;
-    font-size: 1rem;
-    max-width: -webkit-min-content;
-    max-width: -moz-min-content;
-    max-width: min-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 50px;
   }
-  .party-info {
-    -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
+  ul.sliding-menu {
+    background-color: #111010;
+    position: fixed;
+    z-index: 10;
+    width: 50%;
+    left: -50%;
+    top: 0;
+    height: 39%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
-  .party-info h2 {
-    margin-left: -20px;
-    font-size: 1rem;
+  ul.sliding-menu a {
+    border-bottom: 1px solid #FFFFFF;
+    display: inline-block;
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 20px 0;
+    padding-left: 15px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin: 0;
   }
-  .party-info p {
-    margin-top: -10px;
+  ul.sliding-menu a:hover,
+ul.sliding-menu a:focus {
+    background: #220303;
   }
-  .party-info button {
-    padding: 5px;
-    margin-right: 20px;
-    margin-bottom: -200px;
-    font-size: 80%;
+  input[type=checkbox]:checked + ul.sliding-menu {
+    left: 0;
   }
-  .plan-locations button {
-    max-width: 90%;
-    padding: 0;
-    margin-left: 5px;
-    margin-bottom: 20px;
+  input[type=checkbox] {
+    display: none;
   }
-  .plan-locations .box-2 {
-    max-width: 70%;
-    margin-top: 30px;
+  label[for=toggle] {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    color: #FFFFFF;
+    z-index: 10;
+    font-size: 3.5rem;
   }
-  .plan-locations .box-3 {
-    max-width: 70%;
-    margin-top: 30px;
-    margin-left: auto;
+  html {
+    font-size: 1.25rem;
+  }
+  html button {
+    font-size: 1.25;
   }
   .solid-house i,
 .solid-users i,
 .solid-file i,
 .solid-phone i {
-    background-color: transparent;
+    padding: 8px;
+    font-size: 1rem;
   }
-  .container1, .container2 {
+  .container1,
+.container2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -977,130 +972,13 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 50%;
-  }
-  .new-space {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-    margin-top: -100px;
-  }
-  .container1 .community {
-    margin-top: 20px;
-  }
-  .container2 .blog {
-    margin-left: 0;
-    margin-top: -30px;
-    padding-bottom: 20px;
-  }
-  .banner {
-    width: 100vw;
-    margin-top: -70px;
-    margin-bottom: -50px;
-  }
-  .profile-text {
-    max-width: 50%;
-    -webkit-transform: translateX(-50px);
-            transform: translateX(-50px);
-  }
-  .profile-text button {
-    font-size: 80%;
-  }
-  .blog-header {
-    height: 30vh;
-  }
-  .blog-header h1 {
-    font-size: 2rem;
-  }
-  .main-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-left: 50px;
-  }
-  .side-image {
-    margin-top: auto;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .side-blog,
-.our-mission,
-.posts {
     max-width: 100%;
-    margin-left: 0;
-    background-color: #FFFFFF;
+    margin-top: 0;
   }
-  .our-mission {
-    max-width: -webkit-max-content;
-    max-width: -moz-max-content;
-    max-width: max-content;
-  }
-  .posts {
-    margin-bottom: 150px;
-  }
-  .new-menu h2 {
-    font-size: 1.25rem;
-  }
-  .sulaire,
-.renzo {
-    display: none;
-  }
-  .contact-header {
-    height: 25vh;
-  }
-  .contact-title h1 {
-    font-size: 2rem;
-    -webkit-transform: translateX(80px);
-            transform: translateX(80px);
-  }
-  .socials,
-.contact-info {
-    -webkit-transform: translateY(200px);
-            transform: translateY(200px);
-    margin-left: -50px;
-  }
-  .form-box {
-    display: none;
-  }
-}
-@media (max-width: 1000px) {
-  .headerbox-img {
-    display: none;
-  }
-  .blog-post-img {
-    display: none;
-  }
-  .homepg-header {
-    height: 40vh;
-  }
-  .homepg-header nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .blog-post-img,
-.great-locations {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-  .blog-form {
-    display: none;
-  }
-  .form-box {
-    display: none;
-  }
-  .homepg-title h1 {
-    font-size: 3rem;
-  }
-  .contact-title h1 {
-    font-size: 3rem;
-  }
-  .blog-title h1 {
-    font-size: 3rem;
+  .container1 .new-space,
+.container1 .blog,
+.container2 .new-space,
+.container2 .blog {
+    margin: 0;
   }
 }
