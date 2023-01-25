@@ -9,8 +9,8 @@
 }
 
 .contact-title {
-    transform: translateY(180px);
-    margin-left: 150px;
+    transform: translateY(140px);
+    margin-left: 100px;
     h1{
         font-size: 6rem;
     }
@@ -27,34 +27,25 @@
     display: flex;
     flex-direction: column;
     margin-top: 60px;
+    margin-right: 150px;
 }
 
-.socials li{
-    display: flex;
-    justify-content: space-between;
-}
-
-ul i{
-    margin: 0 10px;
-}
-
-.contact-info ul{
-    margin-top: 0;
+.socials ul i{
+    margin: 0 15px;
 }
 
 .contact-info{
     display: flex;
     flex-direction: column;
-   
-    li{
-        list-style: none;
+    h4{
+        margin-bottom: 40px;
+        display: flex;
+        margin-left: 40px;
+        margin-top: 0;
     }
-}
-
-.contact-info h4 {
-    display: flex;
-    margin-left: 45px;
-    margin-top: 0;
+    ul{
+        margin-top: 0;
+    }
 }
 
 .contact-btn{

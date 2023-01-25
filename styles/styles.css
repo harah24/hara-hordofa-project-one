@@ -372,7 +372,7 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 50px;
+  margin-left: 100px;
   background-color: #220303;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -445,9 +445,9 @@ textarea {
 }
 
 .contact-title {
-  -webkit-transform: translateY(180px);
-          transform: translateY(180px);
-  margin-left: 150px;
+  -webkit-transform: translateY(140px);
+          transform: translateY(140px);
+  margin-left: 100px;
 }
 .contact-title h1 {
   font-size: 6rem;
@@ -469,23 +469,11 @@ textarea {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 60px;
+  margin-right: 150px;
 }
 
-.socials li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-ul i {
-  margin: 0 10px;
-}
-
-.contact-info ul {
-  margin-top: 0;
+.socials ul i {
+  margin: 0 15px;
 }
 
 .contact-info {
@@ -497,15 +485,15 @@ ul i {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.contact-info li {
-  list-style: none;
-}
-
 .contact-info h4 {
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 45px;
+  margin-left: 40px;
+  margin-top: 0;
+}
+.contact-info ul {
   margin-top: 0;
 }
 
