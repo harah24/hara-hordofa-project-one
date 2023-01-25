@@ -8,7 +8,11 @@
 }
 
 .blog-title{
-    transform: translateY(160px);
+    transform: translateY(150px);
+    h1{
+        font-size: 6rem;
+        margin-left: 35px;
+    }
 }
 
 .main-flex{
@@ -36,8 +40,8 @@
 }
 
 .our-mission{
-    padding-left: 30px;
-    max-width: 70%;
+    padding-left: 50px;
+    max-width: 80%;
     h4 {
         margin: 0;
     }
@@ -50,7 +54,7 @@
 .posts{
     max-width: 70%;
     h4{
-        padding-left: 30px;
+        padding-left: 50px;
         margin: 0;
     }
     li{
@@ -58,10 +62,17 @@
     }
 }
 
-.recent-posts li::before{
-    content: "•"; 
-    color: $quaternary;
-    padding-right: 10px;
+.recent-posts{
+    padding-left:95px;
+    li{
+        list-style-type:disc;
+        font-size: 1rem;
+        color: $quaternary;
+        span{
+            color: $secondary;
+            font-size: 1.5rem;
+        }
+    }
 }
 
 .main-blog{
@@ -81,6 +92,9 @@
     padding-top: 20px;
     box-shadow: -13px 14px 0px -1px $quinary;
     padding-left: 50px;
+    h2{
+        margin-bottom: 40px;
+    }
 }
 
 .blog-date{

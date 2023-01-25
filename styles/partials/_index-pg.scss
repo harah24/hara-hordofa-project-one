@@ -11,34 +11,67 @@
 
 .homepg-title{
     position: absolute;
-    top: 500px;
-    transform: translateX(400px);
+    top: 250px;
+    transform: translateX(440px);
     z-index: 1;
     font-family: $secondary-font;
-    span{
+    font-weight: 400;
+    color: $quinary;
+    h2{
         font-family: $primary-font;
+        font-size: 5rem;
+        color: $secondary;
+        position: relative;
+        top: -90px;
+        margin-left: 10px;
     }
 }
 
 .headerbox-img{
     position: absolute;
-    right: 40%;
-    transform: translateY(-450px);
-    box-shadow: -10px 2px 0px 25px $quinary;
+    right: 0;
+    top:330px;
+    width:52%;
 }
 
-.about-captured{
-    max-width: 60%;
+.container1{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 150px 0;
-    h2{
-        text-align: center;
+    max-width: 90%;
+    margin-top: 150px;
+    margin-left: 50px;
+    .new-space{
+        margin-right: 50px;
+        margin-left: 100px;
     }
-    button{
-        padding: 10px;
+}
+
+.container2{
+    display: flex;
+    max-width: 90%;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    .blog{
+        margin-right: 50px;
+        margin-left: 100px;
+    }
+}
+
+.solid-house,
+.solid-users,
+.solid-file,
+.solid-phone{
+    display: flex;
+    align-items: center;
+    margin-bottom: -80px;
+    margin-left: -65px;
+    h4{
+        margin-left: 15px;
+    }
+    i{
+        border-radius: 50%;
+        background-color: $quaternary;
+        padding: 15px;
+        font-size: 1rem;
     }
 }
 
@@ -50,75 +83,58 @@
 
 .box-1{
     max-width: 45%;
-    box-shadow: 35px 31px 0px 1px $quinary;
-    margin-bottom: 100px;
-    margin-right: 150px;
-    transform: translateY(-30px);
+    box-shadow: 25px 23px 0px 1px $quinary;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    transform: translateY(-50px);
 }
 
 .box-2{
     max-width: 35%;
-    margin-top: 100px;
+    margin-top: 20px;
+    h4{
+        margin-bottom: 0;
+    }
     button{
-        padding: 10px 15px;
+        padding: 5px 35px;
     }
 }
 
 .box-3{
     max-width: 35%;
     margin-left: 150px;
-    button{
-        padding: 10px 15px;
-        margin-left: 300px;
-    }
+    margin-top: -50px;
     h4{
         text-align: end;
+        margin-bottom: 0;
+    }
+    button{
+        padding: 5px 35px;
+        margin-left: 350px;
     }
 }
 
 .box-4{
     max-width: 40%;
     margin-left: 165px;
-    box-shadow: -32px 35px 0px 1px $quinary;
-    transform: translateY(30px);
+    box-shadow: -32px 28px 0px -5px $quinary;
+    transform: translateY(20px);
 }
 
-.container1{
+.party-info{
+    max-width: 70%;
     display: flex;
-    max-width: 85%;
-    margin-top: 150px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    .new-spaces{
-        margin-right: 100px;
-        margin-left: 100px;
-    }
-}
-
-.container2{
-    display: flex;
-    max-width: 85%;
-    margin-bottom: 100px;
-    margin-left: 50px;
-    .blog{
-        margin-right: 100px;
-        margin-left: 100px;
-    }
-}
-
-.solid-house,
-.solid-users,
-.solid-file,
-.solid-phone{
-    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    h4{
-        margin-left: 10px;
+    padding: 100px 0;
+    h2{
+        text-align: center;
+        color: $quinary ;
+        margin-bottom: 0;
     }
-    i{
-        border-radius: 50%;
-        background-color: $quaternary;
-        padding: 20px;
+    button{
+        padding: 5px 40px;
     }
 }
 
@@ -126,20 +142,21 @@
     display: flex;
     max-width: 80%;
     margin-bottom: 100px;
-}
-
-.small-img{
-    margin-top: 100px;
-    max-width: 40%;
-    box-shadow: -20px 20px 0px 9px $quinary;
-}
-
-.event-text{
-    max-width: 60%;
-    margin-top: 100px;
-    margin-left: 100px;
-    button{
-        padding: 8px 10px;
+    .small-img{
+        margin-top: 210px;
+        max-width: 40%;
+        box-shadow: -30px 28px 0px -5px $quinary;
+    }
+    .event-text{
+        max-width: 60%;
+        margin-top: 100px;
+        margin-left: 100px;
+        h3{
+            color: $quinary;
+        }
+        button{
+            padding: 8px 40px;
+        }
     }
 }
 
@@ -148,7 +165,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 100px;
+    padding: 80px;
     margin: 0;
 }
 

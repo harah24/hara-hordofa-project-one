@@ -2,7 +2,8 @@
 
 body{
     font-family:$primary-font;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 400;
     color: $secondary;
     background-color: $primary;
     line-height: 30px; 
@@ -10,18 +11,21 @@ body{
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 14rem;
+    font-weight: 400;
     letter-spacing: 2.4px;
 }
 
 h2{
-    font-size: 4rem;
+    font-size: 4.5rem;
+    font-weight: 700;
     letter-spacing: 2.6px;
 }
 
 h3,
 h4 {
     font-size: 3rem;
+    font-weight: 700;
     letter-spacing: 2.2px;
 }
 
