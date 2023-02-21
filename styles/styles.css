@@ -360,6 +360,7 @@ footer p {
   background-color: #111010;
   border-color: #FF8327;
   font-family: "Chathura", sans-serif;
+  color: #FFFFFF;
 }
 
 .message .blog-btn {
@@ -933,7 +934,7 @@ textarea {
     margin: 0;
   }
   ul.sliding-menu a:hover,
-ul.sliding-menu a:focus {
+  ul.sliding-menu a:focus {
     background: #220303;
   }
   input[type=checkbox]:checked + ul.sliding-menu {
@@ -980,14 +981,14 @@ ul.sliding-menu a:focus {
     top: -40px;
   }
   .solid-house i,
-.solid-users i,
-.solid-file i,
-.solid-phone i {
+  .solid-users i,
+  .solid-file i,
+  .solid-phone i {
     padding: 8px;
     font-size: 1rem;
   }
   .container1,
-.container2 {
+  .container2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -999,9 +1000,9 @@ ul.sliding-menu a:focus {
     margin-top: 0;
   }
   .container1 .new-space,
-.container1 .blog,
-.container2 .new-space,
-.container2 .blog {
+  .container1 .blog,
+  .container2 .new-space,
+  .container2 .blog {
     margin: 0;
     padding: 0;
   }
@@ -1025,7 +1026,7 @@ ul.sliding-menu a:focus {
     text-align: start;
   }
   .plan-locations .box-1,
-.plan-locations .box-4 {
+  .plan-locations .box-4 {
     max-width: 90%;
     margin: 0;
     padding: 0;
@@ -1111,8 +1112,8 @@ ul.sliding-menu a:focus {
             box-shadow: none;
   }
   .side-blog,
-.our-mission,
-.posts {
+  .our-mission,
+  .posts {
     max-width: 100%;
     margin-left: 0;
     margin-top: 50px;
@@ -1132,7 +1133,7 @@ ul.sliding-menu a:focus {
     justify-items: center;
   }
   .main-blog .blog-form .name,
-.main-blog .blog-form .email-address {
+  .main-blog .blog-form .email-address {
     font-size: 1rem;
   }
   .main-blog .blog-form textarea {
@@ -1152,7 +1153,7 @@ ul.sliding-menu a:focus {
     line-height: 50px;
   }
   .socials,
-.contact-info {
+  .contact-info {
     -webkit-transform: translateY(200px);
             transform: translateY(200px);
     margin-left: -50px;
@@ -1174,7 +1175,7 @@ ul.sliding-menu a:focus {
     padding: 8px 20px;
   }
   .form-box .name,
-.form-box .email-address {
+  .form-box .email-address {
     font-size: 1.25rem;
     max-width: 20%;
   }
@@ -1241,7 +1242,7 @@ ul.sliding-menu a:focus {
     display: flex;
   }
   .blog-post-img,
-.new-menu {
+  .new-menu {
     -webkit-box-shadow: none;
             box-shadow: none;
   }

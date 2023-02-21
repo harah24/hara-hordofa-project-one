@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./fontawesome/css/all.css">
 	<link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="data:;base64,=">
+    <script src="./script/script.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -32,16 +34,17 @@
             </div>
         </div><!-- contact-header end -->
     </header>
-    <section class="bottom-section">
-        <div class="connect">
-            <div class="socials">
-                <ul>
-                    <i class="fa-brands fa-facebook-f fa-2xs"></i>
-                    <i class="fa-brands fa-instagram fa-2xs"></i>
-                    <i class="fa-brands fa-twitter fa-2xs"></i>
-                    <i class="fa-solid fa-phone fa-2xs"></i>
-                </ul>
-            </div><!-- end of socials -->
+    <main>
+        <section class="bottom-section">
+            <div class="connect">
+                <div class="socials">
+                    <ul>
+                        <i class="fa-brands fa-facebook-f fa-2xs"></i>
+                        <i class="fa-brands fa-instagram fa-2xs"></i>
+                        <i class="fa-brands fa-twitter fa-2xs"></i>
+                        <i class="fa-solid fa-phone fa-2xs"></i>
+                    </ul>
+                </div><!-- end of socials -->
             <div class="contact-info wrapper">
                 <h4>Info@email.com</h4>
                 <ul>
@@ -51,23 +54,36 @@
                     <li>M5V2D5</li>
                 </ul>
             </div><!-- end of contact-info -->
-        </div><!-- end of connect -->
+        </div><!-- end of connect --> 
     <div class="form-box">
-        <form action="">
-            <div class="form-container">
-                <input type="text" id="name" name="name" class="name" placeholder="Name">
-                <input type="text" id="email" name="email" class="email-address" placeholder="Email address">
-            </div><!-- end of form-container -->
+        <form id="contactForm">
+            <div class="form-container" >
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="userName" name="" class="name" placeholder="Name">
+                <label for="email" class="sr-only"> Email address</label>
+                <input type="text" id="email" name="" class="email-address"
+                placeholder="Email address">
+            </div> <!-- end of form-container -->
             <div class="message">
-                <textarea name="message" id="message" placeholder="Message" cols="60" rows="5"></textarea>
+                <label for="message" class="sr-only">Message</label>
+                <textarea name="" id="message" cols="60" rows="5" placeholder="Message"></textarea>
                 <button class="contact-btn">Submit</button>
-            </div><!-- end of message -->
+            </div> <!-- end of message -->
         </form>
     </div><!-- end of form-box -->
     </section>
     <footer>
         <p>Copyright © 2019 HackerYou</p>
     </footer>
+    </main>
+
+
+    <!-- <script>
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(){
+            alert ('thanks for reaching out to us')});
+    </script> -->
+
 
 </body>
 </html>

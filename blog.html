@@ -1,112 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./fontawesome/css/all.css">
-	<link rel="stylesheet" href="./styles/styles.css">
-</head>
-<body>
-    <header class="blog-header">
-        <nav>
-            <label for="toggle">
-                <i class="fa fa-bars fa-xs"></i>
-            </label>
-            <input id="toggle" type="checkbox" name="toggle">
-            <ul class="sliding-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a class="bar-one">Bar-One</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="blog-title wrapper">
-            <h1>Blog</h1>
-        </div>
-    </header>
-    <main class="main-flex">
-        <aside class="bar1-posts">
-            <div class="side-img">
-                <img src="./assets/sidebar-image.jpg" alt="Bartender pouring beer in a glass from a beer tap.">
-            </div><!-- end of side-img -->
-            <div class="side-blog">
-                <div class="our-mission">
-                    <h4>Our mission</h4>
-                    <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <span>Find out more.</span></p>
-                </div><!-- end of our-mission -->
-                <div class="posts">
-                    <h4>Recent posts</h4>
-                    <ul class="recent-posts">
-                        <li><span>Donec facilisis tortor ut</span></li>
-                        <li><span>Augue lacinia at viverra</span></li>
-                        <li><span>Semper sed sapien metus</span></li>
-                        <li><span>Scelerisque nec pharetra id</span></li>
-                    </ul>
-                </div><!-- end of posts -->
-            </div><!-- end of side-blog -->
-        </aside>
-        <section class="main-blog">
-            <div class="blog-post-img">
-                <img src="./assets/post-image.jpg" alt="Plates of food on a dark restaurant counter with a couple of food labels">
-            </div><!-- end of blog-post-img -->
-            <div class="new-menu wrapper">
-                <h2>New menu</h2>
-                    <p class="blog-date">Monday January 30, 2019 by Saron</p>
-                    <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia
-                    at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
-                    <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel
-                    justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce
-                    vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui sint suscipit vel ex odio harum perspiciatis saepe, atque
-                       similique, nisi quae. Aliquid, ipsam blanditiis! Neque corporis repellat quas. Ratione quod totam explicabo! Corporis
-                       obcaecati voluptates unde, esse consectetur voluptatem earum quis odit veritatis sequi officiis amet, velit iure enim
-                       temporibus nihil, adipisci cupiditate facere quas consequatur quasi molestias minus suscipit non? Vitae ad odio suscipit
-                       consequatur esse est ut ullam!</p>
-                    <p>Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean
-                        tincidunt turpis sed dui alquam vehicula.</p>
-            </div><!-- end of new-menu -->
-            <div class="wrapper">
-                <h3 class="comments">Comments:</h3>
-                <div class="comment-1">
-                    <div class="sulaire">
-                        <img src="./assets/comment-image-1.jpg" alt="commentor Sulaire">
-                    </div><!-- end of sulaire -->
-                    <div class="sulaires-comment">
-                        <p class="comment-date">Tuesday October 9th, 2019 by Sulaire</p>
-                        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus.</p>
-                    </div><!-- end of sulaires-comment -->
-                </div><!-- end of comment-1 -->
-                <div class="comment-2">
-                    <div class="renzo">
-                        <img src="./assets/comment-image-2.jpg" alt="commentor Renzo">
-                    </div><!-- end of renzo -->
-                    <div class="renzos-comment">
-                        <p class="comment-date">Wednesday October 10th, 2019 by Renzo</p>
-                        <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
-                    </div><!-- end of renzos-comment -->
-                </div> <!-- end of comment-2 -->
-                     <form action="" class="blog-form">
-                         <div class="form-container">
-                             <input type="text" id="name" name="name" class="name" placeholder="Name">
-                             <input type="text" id="email" name="email" class="email-address" placeholder="Email address">
-                         </div> <!-- end of form-container -->
-                         <div class="message">
-                             <textarea name="comment" id="comment" placeholder="Comment" cols="45" rows="3"></textarea>
-                             <button class="blog-btn">Post Comment</button>
-                         </div> <!-- end of message -->
-                     </form>
-            </div><!-- end of comments -->
-   
-        </section>
-    </main>
-    <footer>
-        <p>Copyright © 2019 HackerYou</p>
-    </footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blog</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./fontawesome/css/all.css" />
+		<link rel="stylesheet" href="./styles/styles.css" />
+	</head>
+	<body>
+		<header class="blog-header">
+			<nav>
+				<label for="toggle">
+					<i class="fa fa-bars fa-xs"></i>
+				</label>
+				<input id="toggle" type="checkbox" name="toggle" />
+				<ul class="sliding-menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a class="bar-one">Bar-One</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="blog-title wrapper">
+				<h1>Blog</h1>
+			</div>
+		</header>
+		<main class="main-flex">
+			<aside class="bar1-posts">
+				<div class="side-img">
+					<img src="./assets/sidebar-image.jpg" alt="Bartender pouring beer in a glass from a beer tap."/>
+				</div><!-- end of side-img -->
+				<div class="side-blog">
+					<div class="our-mission">
+						<h4>Our mission</h4>
+						<p>
+							Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin,
+							erat a elementum. <span>Find out more.</span>
+						</p>
+					</div><!-- end of our-mission -->
+					<div class="posts">
+						<h4>Recent posts</h4>
+						<ul class="recent-posts">
+							<li><span>Donec facilisis tortor ut</span></li>
+							<li><span>Augue lacinia at viverra</span></li>
+							<li><span>Semper sed sapien metus</span></li>
+							<li><span>Scelerisque nec pharetra id</span></li>
+						</ul>
+					</div><!-- end of posts -->
+				</div><!-- end of side-blog -->
+			</aside>
+			<section class="main-blog">
+				<div class="blog-post-img">
+					<img src="./assets/post-image.jpg" alt="Plates of food on a dark restaurant counter with a couple of food labels"/>
+				</div><!-- end of blog-post-img -->
+				<div class="new-menu wrapper">
+					<h2>New menu</h2>
+					<p class="blog-date">Monday January 30, 2019 by Saron</p>
+					<p>
+						Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.
+						Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.
+						Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus.
+						Nam tempus vel odio vitae aliquam.
+					</p>
+					<p>
+						In imperdiet eros id lacus vestibulum vestibulum. Suspendisse
+						fermentum sem sagittis ante venenatis egestas quis vel justo.
+						Maecenas semper suscipit nunc, sed aliquam sapien convallis eu.
+						Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor
+						arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend
+						lacu.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui sint
+						suscipit vel ex odio harum perspiciatis saepe, atque similique, nisi
+						quae. Aliquid, ipsam blanditiis! Neque corporis repellat quas.
+						Ratione quod totam explicabo! Corporis obcaecati voluptates unde,
+						esse consectetur voluptatem earum quis odit veritatis sequi officiis
+						amet, velit iure enim temporibus nihil, adipisci cupiditate facere
+						quas consequatur quasi molestias minus suscipit non Vitae ad odio
+						suscipit consequatur esse est ut ullam!
+					</p>
+					<p>
+						Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris
+						venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis
+						sed dui alquam vehicula.
+					</p>
+				</div><!-- end of new-menu -->
+				<div class="wrapper">
+					<h3 class="comments">Comments:</h3>
+					<div class="comment-1">
+						<div class="sulaire">
+							<img src="./assets/comment-image-1.jpg" alt="commentor Sulaire" />
+						</div><!-- end of sulaire -->
+						<div class="sulaires-comment">
+							<p class="comment-date">Tuesday October 9th, 2019 by Sulaire</p>
+							<p>
+								Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+								Donec viverra eleifend lacus, vitae ullamcorper metus. Sed
+								sollicitudin ipsum quis nunc sollicitudin ultrices. Donec
+								euismod scelerisque ligula. Maecenas eu varius risus
+							</p>
+						</div><!-- end of sulaires-comment -->
+					</div><!-- end of comment-1 -->
+					<div class="comment-2">
+						<div class="renzo">
+							<img src="./assets/comment-image-2.jpg" alt="commentor Renzo"/>
+						</div><!-- end of renzo -->
+						<div class="renzos-comment">
+							<p class="comment-date">Wednesday October 10th, 2019 by Renzo</p>
+							<p>
+								Donec viverra eleifend lacus, vitae ullamcorper metus. Sed
+								sollicitudin ipsum quis nunc sollicitudin ultrices. Donec
+								euismod scelerisque ligula.
+							</p>
+						</div><!-- end of renzos-comment -->
+					</div><!-- end of comment-2 -->
+					<!-- <form class="blog-form">
+						<div class="form-container">
+							<label for="name" class="sr-only">Name</label>
+							<input type="text" id="name" name="name" class="name" placeholder="Name"/>
+							<label for="email" class="sr-only">Email</label>
+							<input type="text" id="email" name="email" class="email-address" placeholder="Email address"/>
+						</div> <!-- end of form-container -->
+						<!-- <div class="message">
+							<label for="name" class="sr-only">Comment</label>
+							<textarea name="comment" id="comment" cols="45" rows="3" placeholder="Comment"></textarea>
+							<button class="blog-btn">Post Comment</button>
+						</div><!-- end of message -->
+					</form> --> -->
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>Copyright © 2019 HackerYou</p>
+		</footer>
+	</body>
 </html>
