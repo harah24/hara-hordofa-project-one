@@ -12,16 +12,16 @@ contactForm.addEventListener('submit', function(event){
         // stop the default setting on the page
         event.preventDefault();
 
-        // target the elements required for the form & get the information 
+        // create variables for the required fields on the form 
         const name = document.getElementById('userName');
         const email = document.getElementById('email');
         const message = document.getElementById('message');
 
-        //if user doesn't enter information 
+        //get information from the form; if user doesn't enter the required details then alert the user to complete the fields 
         if (name.value === '' || email.value === '' || message.value === ''){
                 alert('Please complete all fields!');
         } 
-        // if user enters all required information 
+        // if user enters all required information then alert the user that the information has been recieved 
         else {
                 alert('Thank you for contacting us; we will get back to you ASAP!')};
         
