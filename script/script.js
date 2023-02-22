@@ -9,10 +9,10 @@ const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', function(event){
 
-// stop the default setting on the page
+        // stop the default setting on the page
         event.preventDefault();
 
-// target the elements required for the form & get the information 
+        // target the elements required for the form & get the information 
         const name = document.getElementById('userName');
         const email = document.getElementById('email');
         const message = document.getElementById('message');
@@ -24,6 +24,9 @@ contactForm.addEventListener('submit', function(event){
         // if user enters all required information 
         else {
                 alert('Thank you for contacting us; we will get back to you ASAP!')};
+        
+        // once details have been submitted reset page 
+        contactForm.reset();
 });
 
 
